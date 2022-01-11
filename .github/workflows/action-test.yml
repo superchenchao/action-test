@@ -21,4 +21,4 @@ jobs:
         subject: Github Actions job result
         to: ${{secrets.MAIL_TOUSERNAME}}
         from: ${{secrets.MAIL_USERNAME}}
-        body: ${{github.repository}} + ${{steps.git_log.outputs}}
+        body: ${{github.repository}} + ${{JSON.stringify(steps.git_log.outputs)}}
