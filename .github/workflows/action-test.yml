@@ -23,4 +23,6 @@ jobs:
         subject: Github Actions job result
         to: ${{secrets.MAIL_TOUSERNAME}}
         from: ${{secrets.MAIL_USERNAME}}
-        body: Build job of ${{github.repository}} completed successfully! !!str ${{steps.git_log.outputs}}
+        body: Build job of ${{github.repository}} completed successfully! ${{steps.git_log.outputs}}
+      run: | 
+        echo "结果:${{steps.git_log.outputs}}"
