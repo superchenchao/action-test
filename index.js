@@ -1,3 +1,11 @@
+/*
+ * @Author: your name
+ * @Date: 2022-01-11 18:22:29
+ * @LastEditTime: 2022-01-11 18:25:11
+ * @LastEditors: your name
+ * @Description: 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+ * @FilePath: \action-test\index.js
+ */
 const core = require('@actions/core');
 const wait = require('./wait');
 
@@ -13,7 +21,7 @@ async function run() {
     core.info((new Date()).toTimeString());
 
     core.setOutput('time', new Date().toTimeString());
-    core.setOutput('tttt', "哈哈哈");
+    
   } catch (error) {
     core.setFailed(error.message);
   }
