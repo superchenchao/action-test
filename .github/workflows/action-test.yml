@@ -23,4 +23,4 @@ jobs:
         subject: Github Actions job result
         to: ${{secrets.MAIL_TOUSERNAME}}
         from: ${{secrets.MAIL_USERNAME}}
-        body: Build job of ${{github.repository}} completed successfully! ${{steps.git_log.outputs.log}}
+        body: Build job of ${{github.repository}} completed successfully! ${{!!str steps.git_log.outputs.log}}
