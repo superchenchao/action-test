@@ -13,6 +13,7 @@ async function run() {
     core.info((new Date()).toTimeString());
 
     core.setOutput('time', new Date().toTimeString());
+    core.setOutput('tttt', "哈哈哈");
   } catch (error) {
     core.setFailed(error.message);
   }
