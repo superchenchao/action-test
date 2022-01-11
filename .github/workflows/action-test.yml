@@ -10,8 +10,6 @@ jobs:
     - name: Get Git Log
       id: git_log
       uses: superchenchao/action-test@main
-      with:
-        tag: origin/master
     # 发送邮件    
     - name: Send email
       uses: dawidd6/action-send-mail@v3
