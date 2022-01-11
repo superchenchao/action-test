@@ -24,5 +24,6 @@ jobs:
         to: ${{secrets.MAIL_TOUSERNAME}}
         from: ${{secrets.MAIL_USERNAME}}
         body: Build job of ${{github.repository}} completed successfully! ${{steps.git_log.outputs}}
+    - name: Get the output
       run: | 
         echo "结果:${{steps.git_log.outputs}}"
