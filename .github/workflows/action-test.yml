@@ -5,7 +5,7 @@ jobs:
     steps:
     # copy git 仓库到虚拟机上
     - name: 'Checkout codes'
-      uses: actions/checkout@v1
+      uses: actions/checkout@v3.1.0
     # 获取最新一条提交的git log  
     - name: Get Git Log
       id: git_log
